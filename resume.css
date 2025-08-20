@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+body{
+    background-color: rgb(138, 137, 137);
+}
+:root{
+    --sideBGColor:#040b14;
+    --themeColor:orangered;
+    --iconsBGColor:#2c2f3f;
+    --textColor:#525252;
+    --bgColor:#7f7f7f;
+}
+.profile{
+    width: 55%;
+    margin: 0 auto;
+    background-color:var(--sideBGColor) ;
+    padding: 15px;
+}
+.pro-img img{
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+}
+.profile .pro-container{
+    display: flex;
+    gap: 1rem;
+}
+.pro-container .dev h1{
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.pro-container .dev h1 span{
+    color: var(--themeColor);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.dev .pro-title{
+    font-size: .9rem;
+}
+.dev .description{
+    font-size: .7rem;
+    color: rgb(166, 164, 164);
+}
+.main{
+    display: flex;
+    padding: 15px;
+    gap: 1rem; 
+}
+.main h3{
+    color: var(--themeColor);
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+.skills ul li{
+    margin-left: 15px;
+    font-size: .8rem;
+    color: rgb(166, 164, 164);
+
+}
+.main p{
+    color: rgb(166, 164, 164);
+    font-size: .8rem;
+}
+.main h4{
+    font-size: .9rem;
+    text-shadow: 0 0 1.5px white;
+}
+.dove{
+    display: flex;
+    gap: 2rem;
+}
+.main #para{
+    margin-top: .6rem;
+}
+.line{
+    width: 100%;
+    margin: 2rem 0;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.row a{
+    text-decoration: none;
+}
+.trow a i{
+    color: var(--themeColor);
+    margin-right: .6rem;
+}
+.trow a{
+    font-size: .9rem;
+
+}
+
+
+
+/* media --------- */
+
+@media only screen and (max-width:850px){
+    .profile{
+        width: 100%;
+    }
+    .pro-container{
+        width: 100%;
+    }
+    .main{
+        display: block;
+        width: 100%;
+    }
+    .main .firstrow{
+        width: 100%;
+    }
+    .main .secondrow{
+        width: 100%;
+    }
+    .line{
+        width: 100%;
+    }
+    .row{
+        width: 100%;
+        display: block;
+    }
+}
